@@ -12,6 +12,15 @@
         font-family: "Nunito";
         src: url(https://raw.githubusercontent.com/SimpleJSBoi/Squid-Game-Font/main/Nunito.ttf);
       }
+      .buttonDiv {
+        background-color: #0ab2ba;
+        width: 100%;
+        height: 1000px;
+        position: absolute;
+        z-index: 0;
+        top: 0px;
+        left: 0px;
+      }
       .mainDiv {
         left: 0px;
         top: 0px;
@@ -19,12 +28,14 @@
         width: 100%;
         position: absolute;
         background: url(https://github.com/SimpleJSBoi/Blooket-Lists/blob/main/main-div.png?raw=true);
+        z-index: 1;
       }
       .title {
         font-family: "Titan One";
         color: #FFFFFF;
         font-size: 50px;
         padding: 0px 0px 0px 50px;
+        z-index: 2;
       }
       .desc {
         font-family: "Nunito";
@@ -32,16 +43,34 @@
         font-size: 20px;
         padding: 0px 0px 0px 50px;
         font-weight: 500;
+        z-index: 2;
       }
       .descDiv {
         width: 600px;
       }
       .button {
+        position: absolute;
         padding: 20px 40px 20px 40px;
         border: none;
         border-radius: 15px;
         color: #000000;
         font-family: Nunito;
+        z-index: 1;
+      }
+      .red {
+        background-color: #FF0000;
+        top: 550px;
+        left: 50px;
+        font-size: 20px;
+      }
+      line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        top: 80vh;
+        left: 0px;
+        position: absolute;
+        z-index: 100;
       }
     </style>
   </head>
@@ -58,8 +87,9 @@
         <span class="desc">covering Blooks, gamemodes, events, and fun facts!</span>
       </div>
     </div>
-    <div>
-      <span class="button">Blooket Website</span>
+    <line></line>
+    <div class="buttonDiv">
+      <a class="button red" href="https://www.blooket.com/">Blooket Website</a>
     </div>
   </body>
 </html>
